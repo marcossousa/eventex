@@ -2,9 +2,9 @@ from django.conf.urls.defaults import *
 from core.views import *
 from django.conf import settings
 
-urlpatterns = patterns('',
-    (r'^$', homepage),
-    # (r'^admin/', include(admin.site.urls)),
+urlpatterns = patterns('django.views.generic.simple',
+    (r'^$', 'direct_to_template', {'template' : 'index.html'}),
+    #(r'^admin/', include(admin.site.urls)),
 )
 
 
