@@ -5,8 +5,14 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+     ('Marcos Sousa', 'falecomigo@marcossousa.com'),
 )
+
+EMAIL_HOST = 'localhost' 
+EMAIL_HOST_PASSWORD = '' 
+EMAIL_HOST_USER = '' 
+EMAIL_PORT = 25
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MANAGERS = ADMINS
 
@@ -62,7 +68,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     'core',
+    'subscription',
 )

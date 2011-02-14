@@ -1,10 +1,14 @@
 from django.conf.urls.defaults import *
 from core.views import *
 from django.conf import settings
+from django.contrib import admin 
+
+admin.autodiscover()
 
 urlpatterns = patterns('django.views.generic.simple',
     (r'^$', 'direct_to_template', {'template' : 'index.html'}),
-    #(r'^admin/', include(admin.site.urls)),
+    (r'^admin/', include(admin.site.urls)),
+    (r'^subscription/', include('subscription.urls', namespace='subscription')),
 )
 
 
