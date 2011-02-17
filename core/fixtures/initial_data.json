@@ -1,0 +1,20 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "marcossousa", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-02-14 00:54:22", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$7c554$0e2780f9414b0beccfba3ed972eb97deff243a4a", 
+            "email": "falecomigo@marcossousa.com", 
+            "date_joined": "2011-02-06 12:12:46"
+        }
+    }
+]
